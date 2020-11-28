@@ -1,4 +1,3 @@
-$(function() {
 
     getUserinfo();
 
@@ -10,6 +9,14 @@ $(function() {
             layer.close(index);
           });
     })
+
+
+
+
+
+
+
+
 
 
 
@@ -42,6 +49,7 @@ function getUserinfo() {
     })
 }
 
+
 function renderAvator(user) {
     var name = user.nickname || user.username;
     $('.welcom').html('欢迎&nbsp;&nbsp;' + name);
@@ -54,7 +62,3 @@ function renderAvator(user) {
         $('.text_avator').html(first).show();
     }
 }
-
-
-
-})
